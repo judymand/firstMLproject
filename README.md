@@ -13,3 +13,5 @@ pip install:
    - numpy
    
    - keras
+
+   - matplotlib
