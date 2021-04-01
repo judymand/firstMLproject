@@ -19,7 +19,6 @@ y = np.array(data[predict])
 # Distribution of data for training and testing
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=0.1)
 
-
 # Load mode
 linear = linear_model.LinearRegression()
 # Model training
@@ -27,7 +26,6 @@ linear.fit(x_train, y_train)
 # coefficient of determination R^2 of the prediction
 acc = linear.score(x_test, y_test)
 print(acc)
-
 
 print("-------------------------")
 print('Coefficient: \n', linear.coef_)
